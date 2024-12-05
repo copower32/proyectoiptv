@@ -29,33 +29,37 @@ const ContentSlider: React.FC = () => {
     { src: "/images/shazam.webp", alt: "Shazam: Fury of the Gods" },
   ];
 
+  const sportsSlides = [
+    { src: "/images/futbol.png", alt: "Fútbol" },
+    { src: "/images/basquet.jpg", alt: "Baloncesto" },
+    { src: "/images/moto.jpg", alt: "Tenis" },
+    { src: "/images/f1.jpg", alt: "Fórmula 1" },
+  ];
+
   return (
     <section className="bg-black text-white py-10">
       {/* Logos Slider */}
-      {/* Título */}
       <h2 className="text-3xl font-bold text-center mb-6">
-        Más de 20.000 Canales
+        Más de 36.000 Canales en vivo!!
       </h2>
 
-      {/* Slider de Logos */}
       <Swiper
         modules={[Autoplay]}
-        spaceBetween={20} // Espacio reducido entre logos
-        slidesPerView="auto" // Múltiples logos visibles a la vez
+        spaceBetween={20}
+        slidesPerView="auto"
         loop={true}
         autoplay={{
-          delay: 0, // Sin pausa, movimiento continuo
+          delay: 0,
           disableOnInteraction: false,
         }}
-        speed={2000} // Más rápido
+        speed={2000}
         className="flex justify-center items-center"
       >
-        {/* Repetimos los logos para crear la sensación de loop infinito */}
         {logos.concat(logos).map((logo, index) => (
           <SwiperSlide
             key={index}
             className="flex justify-center items-center"
-            style={{ width: "auto" }} // Ajustar automáticamente el tamaño del slide
+            style={{ width: "auto" }}
           >
             <div className="w-28 h-16 md:w-32 md:h-20 flex items-center justify-center">
               <img
@@ -68,19 +72,18 @@ const ContentSlider: React.FC = () => {
         ))}
       </Swiper>
 
-      {/* Title */}
+      {/* Películas Slider */}
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">
-        Películas y Series con IPTV España
+        Las mejores Películas y Series con IPTV WolfNet
       </h2>
 
-      {/* Content Slider */}
       <Swiper
         modules={[Autoplay]}
         slidesPerView={1}
         spaceBetween={20}
         loop={true}
         autoplay={{
-          delay: 3000, // Tiempo entre transiciones
+          delay: 3000,
           disableOnInteraction: false,
         }}
         speed={1000}
@@ -91,6 +94,40 @@ const ContentSlider: React.FC = () => {
         className="pb-10"
       >
         {slides.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <img
+                src={slide.src}
+                alt={slide.alt}
+                className="w-full h-60 object-cover transition-transform duration-300 hover:scale-110"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      {/* Deportes Slider */}
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">
+        Los Mejores Deportes en IPTV WolfNet
+      </h2>
+
+      <Swiper
+        modules={[Autoplay]}
+        slidesPerView={1}
+        spaceBetween={20}
+        loop={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        speed={1000}
+        breakpoints={{
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+        className="pb-10"
+      >
+        {sportsSlides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className="overflow-hidden rounded-lg shadow-lg">
               <img

@@ -1,26 +1,27 @@
 import React from "react";
 
-const Reviews: React.FC = () => {
-  const reviews = [
-    {
-      name: "María G.",
-      role: "Profesora, Madrid",
-      text: "El servicio de IPTV es bastante bueno en términos generales. La calidad de transmisión es excelente, aunque a veces hay pequeños retrasos. Lo que más me gusta es la atención al cliente, siempre responden rápido y de manera eficaz.",
-      avatar: "https://i.pravatar.cc/100?img=1",
-    },
-    {
-      name: "Paola M.",
-      role: "Ingeniera, Barcelona",
-      text: "El servicio de IPTV funciona bien, aunque a veces algunos canales tardan un poco en cargar. Sin embargo, la calidad de imagen es muy buena y el precio es justo. Se lo recomendaría a mis amigos y familiares sin dudarlo.",
-      avatar: "https://i.pravatar.cc/100?img=2",
-    },
-    {
-      name: "Marlon A.",
-      role: "Estudiante, Sevilla",
-      text: "Gran variedad de canales y un precio que no se puede comparar. La experiencia es fantástica y siempre están actualizando el contenido.",
-      avatar: "https://i.pravatar.cc/100?img=3",
-    },
-  ];
+
+  const Reviews: React.FC = () => {
+    const reviews = [
+      {
+        name: "María G.",
+        role: "Profesora, Madrid",
+        text: "Estoy realmente impresionada con el servicio de IPTV. La calidad de la transmisión es excepcional, siempre fluida y clara. Lo que más valoro es la atención al cliente; siempre son rápidos, amables y resuelven cualquier duda o problema de inmediato. ¡Definitivamente recomiendo este servicio!",
+        avatar: "https://i.pravatar.cc/100?img=1",
+      },
+      {
+        name: "Paola M.",
+        role: "Ingeniera, Barcelona",
+        text: "El servicio de IPTV supera mis expectativas. La calidad de imagen es de primera y lo que realmente destaca es la atención al cliente, que siempre está disponible para resolver cualquier pregunta o inquietud. Además, el precio es muy competitivo. ¡Totalmente satisfecho con mi elección!",
+        avatar: "https://i.pravatar.cc/100?img=2",
+      },
+      {
+        name: "Marlon A.",
+        role: "Estudiante, Sevilla",
+        text: "Excelente servicio, con una amplia variedad de canales y una calidad impresionante. La atención al cliente es superrápida y siempre me han ayudado a resolver cualquier duda de manera eficiente. Es un servicio que definitivamente recomiendo a todos, especialmente por su relación calidad-precio.",
+        avatar: "https://i.pravatar.cc/100?img=3",
+      },
+    ];
 
   return (
     <section id="reviews" className="py-16 bg-gray-100">

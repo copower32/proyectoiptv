@@ -14,23 +14,18 @@ const Hero: React.FC = () => {
       {/* Contenido principal */}
       <div className="relative z-10 text-white text-center max-w-3xl px-6 md:px-12 lg:px-20">
         {/* Contenedor del logo */}
-        <div className="mt-8 md:mt-12 flex justify-center w-full"> {/* Reducido el margen superior */}
-          <img
-            src="/images/2.png" // Cambia esta ruta por la de tu logo
-            alt="Logo de la empresa"
-            className="max-h-[30vh] h-auto object-contain" // Ajuste proporcional usando unidades vh
-          />
-        </div>
+
+
 
         {/* Título principal con animación */}
-        <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mt-8 mb-6 drop-shadow-lg">
+        <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mt-8 mb-6 drop-shadow-lg">
           <TypeAnimation
             sequence={[
               "El Mejor Proveedor de Suscripción IPTV España", // Texto 1
               2000, // Tiempo de espera (ms)
-              "Disfruta de más de 19.900 canales en vivo", // Texto 2
+              "Disfruta de más de 36.000 canales en vivo!", // Texto 2
               2000, // Tiempo de espera (ms)
-              "Más de 79.500 películas y series en 4K", // Texto 3
+              "Más de 150.000 películas y series en 4K", // Texto 3
               2000, // Tiempo de espera (ms)
             ]}
             wrapper="span"
@@ -40,8 +35,8 @@ const Hero: React.FC = () => {
         </h1>
 
         {/* Subtítulo descriptivo */}
-        <p className="text-lg md:text-xl font-light leading-relaxed mb-8">
-          En <span className="font-bold text-primary">Premium IPTV España</span>, imagina tener a tu alcance más de <span className="font-bold text-primary">19.900 canales</span> junto con una increíble colección de más de <span className="font-bold text-primary">79.500 películas</span> y series. Todo esto sin bloqueos y en calidad 4K, FHD, HD y SD, adaptable a todos tus dispositivos.
+        <p className="text-xl md:text-2xl font-light leading-relaxed mb-8">
+          En <span className="font-bold text-primary">Wolfnet IPTV España</span>, imagina tener a tu alcance más de <span className="font-bold text-primary">36.000 canales</span> junto con una increíble colección de más de <span className="font-bold text-primary">150.000 películas</span> y series. Todo esto sin bloqueos y en calidad 4K, FHD, HD y SD, adaptable a todos tus dispositivos.
         </p>
 
         {/* Botón de llamada a la acción */}
