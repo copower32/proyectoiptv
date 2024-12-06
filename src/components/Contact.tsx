@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
         {/* Botón de WhatsApp */}
         <div className="mt-8">
           <a
-            href="https://wa.me/123456789?text=Hola,%20tengo%20una%20consulta%20sobre%20IPTV" // Cambia 123456789 por tu número de WhatsApp empresarial
+            href="https://wa.me/34624063991?text=Hola,%20tengo%20una%20consulta%20sobre%20IPTV" // Cambia 123456789 por tu número de WhatsApp empresarial
             target="_blank" // Abrir en nueva pestaña
             rel="noopener noreferrer" // Seguridad adicional
             className="bg-red-600 text-white py-3 px-8 rounded-full text-lg shadow-lg hover:bg-red-700 transition-all"
