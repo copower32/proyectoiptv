@@ -40,7 +40,7 @@ const ContentSlider: React.FC = () => {
     <section className="bg-black text-white py-10">
       {/* Logos Slider */}
       <h2 className="text-3xl font-bold text-center mb-6">
-        Más de 36.000 Canales en vivo!!
+        Más de 65.000 Canales en vivo!!
       </h2>
 
       <Swiper
