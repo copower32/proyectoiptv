@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
             sequence={[
               "El Mejor Proveedor de Suscripción IPTV España", // Texto 1
               2000, // Tiempo de espera (ms)
-              "Disfruta de más de 36.000 canales en vivo!", // Texto 2
+              "Disfruta de más de 65.000 canales en vivo!", // Texto 2
               2000, // Tiempo de espera (ms)
               "Más de 150.000 películas y series en 4K", // Texto 3
               2000, // Tiempo de espera (ms)
@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
 
         {/* Subtítulo descriptivo */}
         <p className="text-xl md:text-2xl font-light leading-relaxed mb-8">
-          En <span className="font-bold text-primary">Wolfnet IPTV España</span>, imagina tener a tu alcance más de <span className="font-bold text-primary">36.000 canales</span> junto con una increíble colección de más de <span className="font-bold text-primary">150.000 películas</span> y series. Todo esto sin bloqueos y en calidad 4K, FHD, HD y SD, adaptable a todos tus dispositivos.
+          En <span className="font-bold text-primary">Wolfnet IPTV España</span>, imagina tener a tu alcance más de <span className="font-bold text-primary">65.000 canales en vivo</span>, junto con una increíble colección de más de <span className="font-bold text-primary">150.000 películas</span> y series. Todo esto sin bloqueos y en calidad 4K, FHD, HD y SD, adaptable a todos tus dispositivos.
         </p>
 
         {/* Botón de llamada a la acción */}
