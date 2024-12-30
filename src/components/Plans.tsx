@@ -5,7 +5,7 @@ const Plans: React.FC = () => {
 
   const plans = {
     one: [
-      { duration: "3 horas ", oldPrice: "", price: "¡Gratis!", features: ["+65.000 Canales en vivo", "+150.000 Películas Y Series", "Cambiar entre dispositivos", "Uso de VPN compatible", "Calidad 4k/HD/UHD", "Guía de televisión", "Mira en cualquier dispositivo", "Soporte VIP gratuito 24/7", "Tecnología anticongelante."], isFree: true },
+      { duration: "3 HORAS ", oldPrice: "", price: "¡Gratis!", features: ["+65.000 Canales en vivo", "+150.000 Películas Y Series", "Cambiar entre dispositivos", "Uso de VPN compatible", "Calidad 4k/HD/UHD", "Guía de televisión", "Mira en cualquier dispositivo", "Soporte VIP gratuito 24/7", "Tecnología anticongelante."], isFree: true },
       { duration: "1 Mes", oldPrice: "€14.99", price: "€9.99", features: ["+65.000 Canales en vivo", "+150.000 Películas Y Series", "Cambiar entre dispositivos", "Uso de VPN compatible", "Calidad 4k/HD/UHD", "Guía de televisión", "Mira en cualquier dispositivo", "Soporte VIP gratuito 24/7", "Tecnología anticongelante."] , isFree: false },
       { duration: "3 Meses", oldPrice: "€29.99", price: "€24.99", features: ["+65.000 Canales en vivo", "+150.000 Películas Y Series", "Cambiar entre dispositivos", "Uso de VPN compatible", "Calidad 4k/HD/UHD", "Guía de televisión", "Mira en cualquier dispositivo", "Soporte VIP gratuito 24/7", "Tecnología anticongelante."], isFree: false },
       { duration: "6 Meses", oldPrice: "€44.99", price: "€39.99", features: ["+65.000 Canales en vivo", "+150.0000 Películas Y Series", "Cambiar entre dispositivos", "Uso de VPN compatible", "Calidad 4k/HD/UHD", "Guía de televisión", "Mira en cualquier dispositivo", "Soporte VIP gratuito 24/7", "Tecnología anticongelante."], isFree: false },
@@ -53,7 +53,7 @@ const Plans: React.FC = () => {
               <p className="text-3xl font-bold mb-4">{plan.price}</p>
               <div className="flex justify-center">
                 <a
-                  href={`https://wa.me/34624063991?text=Hola,%20estoy%20interesado%20en%20${plan.isFree ? "Me gustaria 3 horas de prueba de IPTV PREMIUM" : `el plan de ${plan.duration} por ${plan.price}`}`}
+                  href={`https://wa.me/34624063991?text=Hola,%20estoy%20interesado%20en%20${plan.isFree ? "3 horas de prueba de IPTV PREMIUM" : `el plan de ${plan.duration} por ${plan.price}`}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`py-3 px-8 rounded-full text-lg shadow-lg transition-all ${plan.isFree ? "bg-white text-black hover:bg-gray-200" : "bg-primary text-white hover:bg-red-600"
