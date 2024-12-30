@@ -53,7 +53,7 @@ const Plans: React.FC = () => {
               <p className="text-3xl font-bold mb-4">{plan.price}</p>
               <div className="flex justify-center">
                 <a
-                  href={`https://wa.me/34624063991?text=Hola,%20estoy%20interesado%20en%20${plan.isFree ? "probar el plan de Prueba gratuita" : `el plan de ${plan.duration} por ${plan.price}`}`}
+                  href={`https://wa.me/34624063991?text=Hola,%20estoy%20interesado%20en%20${plan.isFree ? "Me gustaria 3 horas de prueba de IPTV PREMIUM" : `el plan de ${plan.duration} por ${plan.price}`}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`py-3 px-8 rounded-full text-lg shadow-lg transition-all ${plan.isFree ? "bg-white text-black hover:bg-gray-200" : "bg-primary text-white hover:bg-red-600"
