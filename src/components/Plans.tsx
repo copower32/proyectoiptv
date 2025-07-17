@@ -5,7 +5,7 @@ const Plans: React.FC = () => {
 
   const plans = {
     one: [
-      { duration: "3 HORAS ", oldPrice: "", price: "¡Gratis!", features: ["+65.000 Canales en vivo", "+150.000 Películas Y Series", "Cambiar entre dispositivos", "Uso de VPN compatible", "Calidad 4k/HD/UHD", "Guía de televisión", "Mira en cualquier dispositivo", "Soporte VIP gratuito 24/7", "Tecnología anticongelante."], isFree: true },
+      { duration: "24 HORAS ", oldPrice: "", price: "¡2€!", features: ["+65.000 Canales en vivo", "+150.000 Películas Y Series", "Cambiar entre dispositivos", "Uso de VPN compatible", "Calidad 4k/HD/UHD", "Guía de televisión", "Mira en cualquier dispositivo", "Soporte VIP gratuito 24/7", "Tecnología anticongelante."], isFree: true },
       { duration: "1 Mes", oldPrice: "€14.99", price: "€9.99", features: ["+65.000 Canales en vivo", "+150.000 Películas Y Series", "Cambiar entre dispositivos", "Uso de VPN compatible", "Calidad 4k/HD/UHD", "Guía de televisión", "Mira en cualquier dispositivo", "Soporte VIP gratuito 24/7", "Tecnología anticongelante."] , isFree: false },
       { duration: "3 Meses", oldPrice: "€29.99", price: "€24.99", features: ["+65.000 Canales en vivo", "+150.000 Películas Y Series", "Cambiar entre dispositivos", "Uso de VPN compatible", "Calidad 4k/HD/UHD", "Guía de televisión", "Mira en cualquier dispositivo", "Soporte VIP gratuito 24/7", "Tecnología anticongelante."], isFree: false },
       { duration: "6 Meses", oldPrice: "€44.99", price: "€39.99", features: ["+65.000 Canales en vivo", "+150.0000 Películas Y Series", "Cambiar entre dispositivos", "Uso de VPN compatible", "Calidad 4k/HD/UHD", "Guía de televisión", "Mira en cualquier dispositivo", "Soporte VIP gratuito 24/7", "Tecnología anticongelante."], isFree: false },
