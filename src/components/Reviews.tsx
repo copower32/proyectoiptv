@@ -1,4 +1,9 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 const Reviews: React.FC = () => {
   const reviews = [
@@ -15,20 +20,31 @@ const Reviews: React.FC = () => {
           Opiniones Reales de Clientes
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          spaceBetween={20}
+          slidesPerView={1}
+          loop={true}
+          autoplay={{ delay: 2500 }}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+        >
           {reviews.map((review, index) => (
-            <div
-              key={index}
-              className="bg-white p-4 rounded-xl shadow-md border border-red-300 hover:shadow-lg transition"
-            >
-              <img
-                src={review.img}
-                alt={`Reseña ${index + 1}`}
-                className="rounded-lg shadow-md w-full object-cover"
-              />
-            </div>
+            <SwiperSlide key={index}>
+              <div className="bg-white p-4 rounded-xl shadow-md border border-red-300 hover:shadow-lg transition">
+                <img
+                  src={review.img}
+                  alt={`Reseña ${index + 1}`}
+                  className="rounded-lg shadow-md w-full h-80 object-cover object-top"
+                />
+              </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </section>
   );
